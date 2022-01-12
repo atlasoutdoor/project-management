@@ -1,0 +1,38 @@
+﻿body, td, p, div { font-family: Tahoma, Arial, Sans-Serif; font-size: 10pt; }
+
+.space { margin: 10px 0px 10px 0px; }
+.label { font-weight: bold; }
+.title { padding: 2px; }
+
+h1 { margin: 0px; padding: 0px; }
+
+table.daypilot_inner { width:100%; padding: 0px; border-spacing: 0px; table-layout: fixed; }
+table.daypilot_inner td { padding: 0px; white-space: nowrap;  }
+table.daypilot_inner td div { overflow: hidden; width: 100%; }
+
+.task_status 
+{
+	display:inline-block;
+	width:10px;
+	height: 10px;
+	border: 1px solid #666;
+	margin-right: 3px;
+	margin-left: 2px;
+}
+
+.task_status.planned 
+{
+	background-color: #004dc3; /* blue */
+}
+.task_status.started 
+{
+	background-color: #008e00;  /* green */
+}
+.task_status.finished 
+{
+	background-color: #eab71e;  /* gray */
+}
+
+body.moving, body.moving * {  
+  cursor: move !important;  
+}  

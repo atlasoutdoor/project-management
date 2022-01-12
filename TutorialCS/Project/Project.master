@@ -1,0 +1,14 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.master" CodeFile="Project.master.cs" Inherits="MasterProject" %>
+<asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
+    <script src="<%# ResolveUrl("~/Scripts/App/gantt.js") %>" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"/>
+</asp:Content>
+<asp:Content ID="ToolbarContent" runat="server" ContentPlaceHolderID="ToolbarContent">
+        <a href="<%# ResolveUrl("~/Project/Default.aspx/" + ProjectId) %>">Tasks</a>
+        <a href="<%# ResolveUrl("~/Project/Resources.aspx/" + ProjectId) %>">Resources</a>
+        <a href="<%# ResolveUrl("~/Project/Properties.aspx/" + ProjectId) %>">Project</a>
+</asp:Content>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
+        <h1><%# ProjectName %></h1>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+</asp:Content>
